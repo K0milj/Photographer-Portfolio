@@ -1,0 +1,40 @@
+footer{
+    background-color: var(--background);
+    padding: 10px 40px;
+    color: white;
+}
+
+footer p{
+    text-align: center;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-top ul{
+    color: white;
+}
+
+.footer-top a{
+    display: inline-block;
+    margin: 5px 0;
+    padding: 10px 0;
+    color: white;
+}
+
+.footer-top a:hover{
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.socials ul{
+    display: flex;
+    font-size: 1.3rem;
+}
+
+.socials li+li{
+    margin-left: 30px;
+}

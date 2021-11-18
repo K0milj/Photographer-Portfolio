@@ -1,0 +1,83 @@
+/* navigation link list */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav li+li{
+    margin-left: 20px;
+}
+
+/* style for nav links */
+
+nav a{
+    padding: 20px 0;
+    color: var(--background);
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+nav a:active{
+    animation: link .2s ease;
+}
+
+@keyframes link {
+    0%{
+        transform: scale(.4, .4);
+    }
+
+    100%{
+        transform: scale(1, 1);
+    }
+}
+
+nav a:hover{
+    border-bottom: 1px solid var(--background);
+}
+
+/* style for call to action btn */
+
+#hire-me{
+    padding: 10px 20px;
+    color: white;
+    background: var(--important);
+    border-radius: 40px;
+    text-transform: uppercase;
+    transition: background .3s ease;
+}
+
+#hire-me:hover{
+    border: none;
+    background: rgba(60, 60, 255, .6);
+}
+
+/* breadcrum navigation */
+
+.breadcrums{
+    margin: 20px 0;
+}
+
+.breadcrums ul{
+    overflow: hidden;
+}
+
+.breadcrums li{
+    float: left;
+}
+
+.breadcrums li+li{
+    margin-left: 10px;
+}
+
+.breadcrums li+li::before{
+    content: ">";
+    color: var(--background);
+    margin-right: 10px;
+}

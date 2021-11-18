@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    font-family: sans-serif;
+}
+
+body{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*colors*/
+
+:root{
+    --background: black;
+    --color: white;
+    --important: rgb(60, 60, 255);
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px){
+    header .hero{
+        font-size: 2rem;
+    }
+
+    body .sec-one .text-cont{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    header .hero{
+        font-size: 1.5rem;
+    }
+
+    .sec-three{
+        flex-direction: column;
+    }
+
+    body .sec-three > h3{
+        writing-mode: horizontal-tb;
+        letter-spacing: 15px;
+        margin: 30px;
+    }
+
+    .sec-three .gear{
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .sec-three .gear h3{
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 601px){
+    header .hero{
+        font-size: 1.2rem;
+    }
+
+    /* alter the animation for hero text */
+
+    header .hero:hover span{
+        animation: none;
+    }
+
+    @keyframes push-left {
+        0%{
+            left: 0;
+        }
+    
+        100%{
+            left: 35%;
+        }
+    }
+
+    body .sec-one{
+        flex-direction: column;
+    }
+
+    .sec-one .text-cont{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .sec-one .img-text h2{
+        font-size: 3rem;
+    }
+
+    .sec-two .skills{
+        width: 100%;
+    }
+
+    .footer-top{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 425px){
+
+    /* nav links 1 column */
+    
+    nav, nav ul{
+        flex-direction: column;
+    }
+
+    header nav ul li a:active{
+        border-bottom: 1px solid var(--background);
+    }
+
+    header nav ul li+li{
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    /* make hero container more visible on small screens */
+
+    header .hero{
+        height: 300px;
+    }
+}
+
+@media only screen and (max-height: 625px){
+    
+    /* make hero container more visible on small screens */
+
+    header .hero{
+        height: 300px;
+    }
+}
